@@ -1,0 +1,14 @@
+package com.exchangeCurrency.ExchangeRates.Convert;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+@Data
+public class CurrencyConverterD {
+    private double result;
+
+    @JsonProperty("query")
+    private ConverterD converterD;
+}
